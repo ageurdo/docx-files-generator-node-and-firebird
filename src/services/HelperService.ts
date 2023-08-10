@@ -1,4 +1,4 @@
-function getFormattedDate() {
+export function getFormattedDate() {
     const now = new Date();
     const day = now.getDate();
     const monthNames = [
@@ -12,6 +12,3 @@ function getFormattedDate() {
     return `${day} de ${month} de ${year}`;
 }
 
-module.exports = {
-    getFormattedDate
-};
