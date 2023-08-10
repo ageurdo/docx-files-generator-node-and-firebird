@@ -1,5 +1,5 @@
-import firebird from "node-firebird";
-import dotenv from "dotenv";
+const dotenv = require('dotenv');
+const firebird = require('node-firebird');
 
 dotenv.config();
 
@@ -32,4 +32,7 @@ function executeQuery(ssql, params, callback) {
     });
 }
 
-export { executeQuery };
+module.exports = {
+    executeQuery
+};
+

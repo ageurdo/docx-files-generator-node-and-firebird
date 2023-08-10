@@ -1,6 +1,7 @@
-import express from "express";
-import cors from "cors";
-import { executeQuery } from "./config/database.js";
+const express = require('express');
+const cors = require('cors');
+const { executeQuery } = require('./config/database.js'); // Importar helper.js
+
 
 const app = express();
 
@@ -12,7 +13,7 @@ app.use(cors());
 // Rotas
 app.get("/empresas", function (req, res) {
 
-    let ssql = 'select * from empresas ';
+    let ssql = 'select razaosocial, cgc, endereco, numero, bairro, cidade, uf, cep from empresas ';
 
     let filtro = [];
 
