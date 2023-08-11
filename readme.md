@@ -1,53 +1,45 @@
+# DOCX File Generator from Firebird Database
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+![Node.js](https://img.shields.io/badge/Node.js-v16-green)
+![TypeScript](https://img.shields.io/badge/TypeScript-v4-blue)
+![Firebird](https://img.shields.io/badge/Firebird-v3.0-red)
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+An application developed in Node.js and TypeScript to generate DOCX files containing dynamic company data such as CNPJ, business name, address, and other details.
 
-* Skeleton backend Nodejs with eslint, prettier and config editor.
-* Esqueleto configurado para backend em NodeJs, utilizando Eslint, Prettier e Editor Config para correções e padronização de código.
+## Screenshots
 
+![Screenshot 1](src/assets/screenshot.png)
 
-### Built With
+## Features
 
-This section should list any major depencies that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [NodeJs](https://nodejs.org/)
-* [Prettier](https://prettier.io/)
-* [Eslint](https://eslint.org/)
-* [EditorConfig](https://editorconfig.org/)
+- Generates customized DOCX files for each company from the Firebird database.
+- Includes information like CNPJ, business name, address, and other relevant details.
+- Facilitates the generation of authorizations for using company data and logos on a software provider's website.
 
-
-<!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* yarn
-  ```sh
-  npm install --global yarn
-  ```
-* Run
-  ```sh
-  yarn dev:server
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repository:
    ```sh
-   git clone https://github.com/ageurdo/TemplateBackendNodeJs.git
-   ```
-3. Install Yarn packages
-   ```sh
-   yarn
+   git clone https://github.com/ageurdo/docx-files-generator-node-and-firebird.git
    ```
 
-<!-- ACKNOWLEDGEMENTS -->
-## Links úteis
+2. Navigate to the project directory:
+   ```sh
+   cd docx-files-generator-node-and-firebird
+   ```
 
-* [Padrões de projeto com ESLint, Prettier e EditorConfig](https://www.notion.so/Padr-es-de-projeto-com-ESLint-Prettier-e-EditorConfig-0b57b47a24724c859c0cf226aa0cc3a7)]
+3. Create a .env file based on the .env.sample file and fill in the Firebird database connection information.
+
+4. Install dependencies:
+    ```sh
+    yarn install
+    # or
+    npm install
+    ```
+
+5. Start the development server:
+    ```sh
+    yarn dev
+    ```
+
+Note: Output Files - After running the project, the generated files will be saved in the ./output folder.
